@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import Home from './components/home.tsx'
 import Box from '@mui/material/Box';
+import Training from './components/training.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
         }}
       >
         <Home />
+        <Training />
       </Box>
     </Box>
   </StrictMode>
