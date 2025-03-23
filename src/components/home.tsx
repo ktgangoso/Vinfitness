@@ -2,57 +2,84 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
     return (
-        <div>
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", margin: { xs: ".5rem", md: "1rem" }, borderRadius: "1rem" }}>
+        <div id="home">
+            <Box sx={{
+                display: "flex", justifyContent: "center", alignItems: "center", margin: { xs: ".5rem", md: "0" },
+                borderRadius: "1rem"
+            }}>
                 <Box sx={{
                     minHeight: "100vh", width: "100%",
                     borderRadius: "1rem",
                     display: "flex",
                     justifyContent: "center",
-                    flexDirection: { xs: "column", md: "row" }, 
+                    flexDirection: { xs: "column", md: "row" },
+
                 }}>
 
-                    {/* left side */}
-                    <Box sx={{ backgroundImage: "url('/background/homebg.webp')", textAlign: "left", height: "100%", width: "100%", backgroundRepeat: "no-repeat", backgroundSize: "cover", color: "#000" }}>
+                    {/* home page */}
+                    <Box sx={{
+                        textAlign: "center", height: "100%", width: { xs: "100%", md: "50%" },
+                        backgroundRepeat: "no-repeat", backgroundSize: "cover", color: "#fff"
+                    }}>
                         <Box sx={{
-                            backgroundColor: "rgba(255, 255, 255, 0.1)",
-                            backdropFilter: "blur(3px)",
-                            margin: "2rem",
-                            border: "2px solid rgba(255, 255, 255, 0.3)", 
-                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)", 
-                            borderRadius: "10px", 
+                            // backdropFilter: "blur(5px)",
+                            // border: "2px solid rgba(255, 255, 255, 0.3)",
+                            // boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+                            // backgroundColor: "rgba(0, 0, 0, 0.1)",
+                            marginTop: "8rem",
+                            borderRadius: "10px",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
-                            padding: "2rem"
-                        
+                            padding: "2rem", gap: "1rem"
+
                         }}>
                             <Typography sx={{
-                                fontSize: { xs: ".8rem", sm: "1.3rem", md: "1.5rem" } , padding: { xs: ".5rem", sm: "1.3rem", md: "1.5rem" }, fontWeight: "700"
+                                fontSize: { xs: "1.5rem", md: "3rem" }, padding: { xs: "0", md: "1.5rem" },
+                                fontWeight: "700"
                             }}>
-                                Anytime,
+                                Build Your Strength,
                                 <br />
-                                anywhere.
+                                anytime, anywhere.
                                 <br />
-                                Start your fitness journey today and unlock a stronger,
-                                <br />
-                                healthier version of yourself. No matter where you are,
-                                <br />
-                                every step forward brings you closer to your goals—because
-                                <br />
-                                greatness begins with a single move!
                             </Typography>
-                            <Button variant="contained" sx={{width: { xs: "100%",  md: "50%" }, padding: { xs: ".5rem",  md: "1rem" }}}>Try Now!</Button>
+
+                            <Typography>
+                                Start your fitness journey today and unlock a stronger,
+                                healthier version of yourself. No matter where you are,
+                                every step forward brings you closer to your goals because
+                                greatness begins with a single move!
+
+                            </Typography>
+
+                            {/* <Button variant="contained" sx={{
+                                borderRadius: "2rem",
+                                width: { xs: "100%", md: "50%" },
+                                padding: { xs: ".5rem", md: "1rem" },
+                            }} smooth to="/#training" >Start Now!</Button> */}
+                            {/* <HashLink >Training</HashLink> */}
+
+                            <HashLink smooth to="/#training" style={{ textDecoration: "none" }}>
+                                <Button
+                                    variant="contained"
+                                    sx={{
+                                        borderRadius: "2rem",
+                                        width: { xs: "10rem", md: "15rem" },
+                                        padding: { xs: ".5rem", md: "1rem" },
+                                    }}
+                                >
+                                    Start Now!
+                                </Button>
+                            </HashLink>
+
                         </Box>
                     </Box>
 
-                    {/* right side */}
-                    <Box sx={{ backgroundImage: "url('/img/workout.webp')", height: "81vh", width: "100%", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}>
-                     
-                    </Box>
+
                 </Box>
             </Box>
 

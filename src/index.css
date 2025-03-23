@@ -1,4 +1,4 @@
-:root {
+body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   background-size: cover;
@@ -8,5 +8,9 @@
   color: white;
   background-image: url('/background/backgrounding.webp'); 
   background-repeat: no-repeat;
+  background-color: #565656; 
+  background-blend-mode: multiply; 
+  margin: 0;
+  padding: 0;
 }
 

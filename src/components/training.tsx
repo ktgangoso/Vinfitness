@@ -28,7 +28,7 @@ function Training() {
     const [pushopen, pplOpen] = React.useState(false);
     const PPLOpen = () => pplOpen(true);
     const PPLClose = () => pplOpen(false);
-    
+
     const [upperopen, ulOpen] = React.useState(false);
     const ULOpen = () => ulOpen(true);
     const ULClose = () => ulOpen(false);
@@ -38,11 +38,11 @@ function Training() {
     const FBClose = () => fbOpen(false);
 
     return (
-        <div>
+        <div id="training">
             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", }}>
                 <Box sx={{
-                    minHeight: "100vh", width: "80%", backgroundColor: "#fff",
-                    display: "flex", justifyContent: "space-around", flexDirection: "column"
+                    minHeight: "100vh", width: "100%", backgroundColor: "#fff",
+                    display: "flex", justifyContent: "center", flexDirection: "column", padding: {xs: "1rem", md: "0"}
                 }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", gap: "1rem" }}>
                         <Typography sx={{ fontSize: "2rem", textAlign: "center", color: "#000" }}>
@@ -52,6 +52,17 @@ function Training() {
                             Unlock your full potential with personalized training tailored to your needs.
                             Whether in a group or one-on-one, our expert coaches are here to guide you every step of the way.
                         </Typography>
+
+                        <Button variant="contained" sx={{
+                            borderRadius: "2rem",
+                            width: { xs: "100%", md: "25%" },
+                            padding: { xs: ".5rem", md: "1rem" },
+                            margin: "1rem",
+                            fontSize: { xs: ".7rem", md: ".9rem" },
+                        }}>
+                            Learn more about fitness
+                        </Button>
+
                     </Box>
                     <Box sx={{
                         display: "flex", justifyContent: "space-around", alignItems: "center",
@@ -66,16 +77,16 @@ function Training() {
                         }}>
                             <CardMedia
                                 sx={{ height: 140 }}
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="green iguana"
+                                image="/workoutplan/ppl.png"
+                                title="Push Pull Legs"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
                                     Push Pull Legs
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    The Push-Pull-Legs (PPL) split divides training into Push, Pull, and Legs days for balanced growth and recovery.
+                                    It’s effective for strength and hypertrophy, typically done 3 or 6 days a week.
                                 </Typography>
                             </CardContent>
                             <CardActions>
@@ -90,14 +101,48 @@ function Training() {
                             onClose={PPLClose}
                             aria-labelledby="modal-modal-title"
                             aria-describedby="modal-modal-description"
+                            sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "row", color: "#000"}}
                         >
-                            <Box sx={style}>
+                            <Box sx={{backgroundColor: "#fff", padding: "2rem"}}>
                                 <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    Push Pull Legs Modal
+                                    <strong>Push Pull Legs</strong>
                                 </Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                                </Typography>
+                                <Box>
+                                    <Typography>Push workouts focus on training the upper body muscles responsible for pushing movements,
+                                        primarily targeting the chest, shoulders, and triceps.
+                                    </Typography>
+                                    <br />
+                                    <Typography><strong>Push Workout Muscles</strong></Typography>
+                                    <ul>
+                                        <li><strong>Chest:</strong> Incline dumbbell press, Flat dumbbell press, and Pec deck flyes</li>
+                                        <li><strong>Shoulders:</strong> Shoulder press, Lateral Raise, Rope Face pulls </li>
+                                        <li><strong>Triceps:</strong> Triceps Pulldown, dips</li>
+                                    </ul>
+                                </Box>
+                                <Box>
+                                    <Typography>Push workouts focus on training the upper body muscles responsible for pushing movements,
+                                        primarily targeting the chest, shoulders, and triceps.
+                                    </Typography>
+                                    <br />
+                                    <Typography><strong>Push Workout Muscles</strong></Typography>
+                                    <ul>
+                                        <li><strong>Chest:</strong> Incline dumbbell press, Flat dumbbell press, and Pec deck flyes</li>
+                                        <li><strong>Shoulders:</strong> Shoulder press, Lateral Raise, Rope Face pulls </li>
+                                        <li><strong>Triceps:</strong> Triceps Pulldown, dips</li>
+                                    </ul>
+                                </Box>
+                                <Box>
+                                    <Typography>Push workouts focus on training the upper body muscles responsible for pushing movements,
+                                        primarily targeting the chest, shoulders, and triceps.
+                                    </Typography>
+                                    <br />
+                                    <Typography><strong>Push Workout Muscles</strong></Typography>
+                                    <ul>
+                                        <li><strong>Chest:</strong> Incline dumbbell press, Flat dumbbell press, and Pec deck flyes</li>
+                                        <li><strong>Shoulders:</strong> Shoulder press, Lateral Raise, Rope Face pulls </li>
+                                        <li><strong>Triceps:</strong> Triceps Pulldown, dips</li>
+                                    </ul>
+                                </Box>
                             </Box>
                         </Modal>
 
@@ -109,7 +154,7 @@ function Training() {
                         }}>
                             <CardMedia
                                 sx={{ height: 140 }}
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                image="/workoutplan/up.png"
                                 title="green iguana"
                             />
                             <CardContent>
@@ -117,8 +162,9 @@ function Training() {
                                     Upper Lower
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    The Upper-Lower split alternates between Upper Body (chest, back, shoulders, arms) and
+                                    Lower Body (quads, hamstrings, glutes, calves) workouts.
+                                    It’s great for strength and hypertrophy, usually done 4 days a week.
                                 </Typography>
                             </CardContent>
                             <CardActions>
@@ -151,8 +197,8 @@ function Training() {
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
                         }}>
                             <CardMedia
-                                sx={{ height: 140 }}
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                sx={{ height: "140px" }}
+                                image="/workoutplan/fullbody.webp"
                                 title="green iguana"
                             />
                             <CardContent>
@@ -160,8 +206,8 @@ function Training() {
                                     Full Body
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    The Full Body workout targets all major muscle groups in a single session, maximizing efficiency and frequency.
+                                    It’s ideal for strength, hypertrophy, and fat loss, typically done 3 to 4 times a week.
                                 </Typography>
                             </CardContent>
                             <CardActions>
@@ -179,7 +225,7 @@ function Training() {
                         >
                             <Box sx={style}>
                                 <Typography id="modal-modal-title" variant="h6" component="h2">
-                                Full Body Modal
+                                    Full Body Modal
                                 </Typography>
                                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                                     Duis mollis, est non commodo luctus, nisi erat porttitor ligula.

@@ -1,34 +1,18 @@
 import './App.css'
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/home';
+import Training from './components/training';
+import { Box } from '@mui/material';
+import Navbar from './components/navbar';
+import Coaching from './components/coaching';
 
-const pages = ['Home', 'Training ', 'About', 'Contact'];
 
 function App() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: "#686868", width: "100%"}}>
+      {/* <AppBar position="static" sx={{ backgroundColor: "#1976d2", width: "100%"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -115,7 +99,26 @@ function App() {
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+      </AppBar> */}
+        <Box
+          sx={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            zIndex: 1000,
+            backgroundColor: "#595959",
+          }}
+        >
+          <Navbar/>
+
+        </Box>
+
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/#training" element={<Training />} />
+        <Route path="/#coaching" element={<Coaching />} />
+      </Routes> */}
     </>
   )
 }
