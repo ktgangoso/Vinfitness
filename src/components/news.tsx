@@ -58,13 +58,16 @@ function News() {
                     display: "flex", justifyContent: "center", alignItems: "center",
                     flexDirection: { xs: "column", md: "column" }, width: "auto", gap: "1rem", backgroundColor: "#fff",
                 }}>
-                    <Typography sx={{ fontSize: { xs: "", md: "1.2rem" }, fontWeight: "700" }} >Other Article</Typography>
-                    <Divider sx={{ width: { xs: "100%", md: "80%" }, border: "1px solid black" }} />
 
-                    <Box sx={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexDirection: { xs: "column", md: "row" }, gap: "1rem",  }}>
+                    <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: {xs: "column", md: "row"}, gap: "1rem", width: "100%"}}>
+                        <Typography sx={{ fontSize: { xs: "", md: "1.2rem" }, fontWeight: "700" }} >Other Article</Typography>
+                        <Divider sx={{ width: { xs: "100%", md: "80%" }, border: "1px solid black" }} />
+                    </Box>
+
+                    <Box sx={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexDirection: { xs: "column", md: "row" }, gap: "1rem", }}>
                         <Box sx={{
                             border: "2px solid rgba(0, 0, 0, 0.3)",
-                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)", margin: "1rem", width: {xs: "18rem", md: "25rem"}, height: "100%"
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)", margin: "1rem", width: { xs: "18rem", md: "25rem" }, height: "100%"
                         }}>
                             <CardMedia
                                 sx={{ height: { xs: "18rem", md: "20rem" }, width: { xs: "18rem", md: "25rem" } }}
