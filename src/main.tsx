@@ -15,16 +15,12 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <Box>
         <App />
-        <Box
-          sx={{
-            marginTop: { xs: "2rem", md: "0" },
-          }}
-        >
+        <Box>
           <Home />
           <Training />
           <Coaching />
           <News />
-          
+
         </Box>
       </Box>
     </StrictMode>

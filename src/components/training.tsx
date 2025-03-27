@@ -39,10 +39,12 @@ function Training() {
 
     return (
         <div id="training">
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", }}>
+            <Box sx={{
+                display: "flex", justifyContent: "center", alignItems: "center", paddingTop: { xs: "3rem", md: "0" },
+            }}>
                 <Box sx={{
                     minHeight: "100vh", width: "100%", backgroundColor: "#fff",
-                    display: "flex", justifyContent: "center", flexDirection: "column", padding: {xs: "1rem", md: "0"}
+                    display: "flex", justifyContent: "center", flexDirection: "column", padding: { xs: "1rem", md: "0" }
                 }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", gap: "1rem" }}>
                         <Typography sx={{ fontSize: "2rem", textAlign: "center", color: "#000" }}>
@@ -101,9 +103,9 @@ function Training() {
                             onClose={PPLClose}
                             aria-labelledby="modal-modal-title"
                             aria-describedby="modal-modal-description"
-                            sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "row", color: "#000"}}
+                            sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "row", color: "#000" }}
                         >
-                            <Box sx={{backgroundColor: "#fff", padding: "2rem"}}>
+                            <Box sx={{ backgroundColor: "#fff", padding: "2rem" }}>
                                 <Typography id="modal-modal-title" variant="h6" component="h2">
                                     <strong>Push Pull Legs</strong>
                                 </Typography>
