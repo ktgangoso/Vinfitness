@@ -8,9 +8,9 @@ import CardMedia from '@mui/material/CardMedia';
 function News() {
     return (
         <div id="nutrition">
-            <Box sx={{ backgroundColor: "#fff", color: "#000", height: "100vh", width: "100%", paddingTop: { xs: "4rem", md: "5rem" }, margin: 0 }}>
+            <Box sx={{ backgroundColor: "#fff", color: "#000", height: "100%", width: "100%", paddingTop: { xs: "4rem", md: "5rem" }, margin: 0 }}>
                 <Box>
-                    <Typography sx={{ fontSize: { xs: "2rem", md: "3rem" }, textAlign: "center" }}> <strong>Nutrition</strong> </Typography>
+                    <Typography sx={{ fontSize: { xs: "2rem", md: "3rem" }, textAlign: "center", color: "#059" }}> <strong>Nutrition</strong> </Typography>
                     <Typography sx={{ fontSize: { xs: "1rem", md: "1.4rem" }, textAlign: "center" }}>Discover meal plans, diet tips, supplements info and delicious recipes to help improve your sports nutrition.</Typography>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: { xs: "center", md: "start" }, flexDirection: { xs: "column", md: "row" }, padding: "1rem", gap: "2rem", }}>

@@ -16,7 +16,7 @@ function Coaching() {
             }}>
                 <Box sx={{ padding: "1rem" }}>
                     <Box sx={{ color: "#000", textAlign: "center" }}>
-                        <Typography sx={{ fontSize: {xs: "2rem", md: "3rem"}, fontWeight: 900, fontFamily: "Poppins, sans-serif" }}>
+                        <Typography sx={{ fontSize: {xs: "2rem", md: "3rem"}, fontWeight: 900, fontFamily: "Poppins, sans-serif", color: "#059" }}>
                             Coaching Program
                         </Typography>
                     </Box>

@@ -17,6 +17,7 @@ function Navbar() {
         { label: "Home", to: "/#" },
         { label: "Training", to: "/#training" },
         { label: "Coaching", to: "/#coaching" },
+        { label: "Categories", to: "/#categories" },
         { label: "Nutrition", to: "/#nutrition" },
     ];
 

@@ -9,6 +9,8 @@ import Coaching from './components/coaching.tsx'
 import News from './components/news.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/navbar.tsx'
+import Footer from './components/footer.tsx'
+import Categories from './components/Categories.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
@@ -19,8 +21,9 @@ createRoot(document.getElementById('root')!).render(
           <Home />
           <Training />
           <Coaching />
+          <Categories />
           <News />
-
+          <Footer />
         </Box>
       </Box>
     </StrictMode>
